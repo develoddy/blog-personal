@@ -3,18 +3,21 @@
 const buttonEmail = document.getElementById('buttonEmail');
 const loader = document.getElementById('buttonloader');
 
+
 if ( loader ) {
     loader.style.display = 'none';
 }
 
-const alertWarning = document.getElementById('alert-warning');
-if ( alertWarning ) {
-    alertWarning.style.display = 'none';
+const alertDanger = document.getElementById('alert-danger');
+if ( alertDanger ) {
+    alertDanger.style.display = 'none';
 }
 
 if ( buttonEmail ) {
     buttonEmail.addEventListener('click', function(e) {
         e.preventDefault();
+
+        
     
         //buttonText.style.display = 'none';
         loader.style.display = 'inline-block';
@@ -29,10 +32,11 @@ if ( buttonEmail ) {
 
             setTimeout(function () {
                 loader.style.display = 'none';
-                document.getElementById('name').style.borderColor = "red";
-                document.getElementById('email').style.borderColor = "red";
-                document.getElementById('subject').style.borderColor = "red";
-                alertWarning.style.display = 'block';
+                document.getElementById('name').style.border = "1px solid red";
+                document.getElementById('email').style.border = "1px solid red";
+                document.getElementById('subject').style.border = "1px solid red";
+                alertDanger.style.display = 'block';
+                alertDanger.style.color = "red";
             }, 1000);
             
         } else {
