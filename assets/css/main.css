@@ -2,10 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Eddy Lujan
+	www.lujandev.com
 */
+
+:root {
+	--gray: #e6e7eb;
+	--yellow: #fea911;
+	--blue: #01314a;
+  }
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -216,7 +221,7 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 0.6em;
 		line-height: 1.5em;
 	}
 
@@ -2497,7 +2502,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4091bf;
+			/* background-color: #4091bf; */
+			background-color: var(--yellow);
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2507,7 +2513,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #4997c5 !important;
+				background-color: #f8a32c !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -3417,7 +3423,8 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 .icon.major {
-				border-color: #dfdfdf;
+				/* border-color: #dfdfdf; */
+				border-color: var(--gray);
 			}
 
 			.wrapper.style5 ul.alt li {
@@ -4160,9 +4167,9 @@ input, select, textarea {
 		background-color: rgba(29, 36, 42, 0.9);
 	}
 
-	body.is-mobile.landing #page-wrapper {
+	/*body.is-mobile.landing #page-wrapper {
 		background: none;
-	}
+	}*/
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
